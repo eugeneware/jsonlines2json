@@ -1,0 +1,38 @@
+{
+  "name": "jsonlines2json",
+  "version": "1.0.0",
+  "description": "Convert CRLF or New Line Delimited JSON into valid JSON",
+  "main": "index.js",
+  "bin": {
+    "jsonlines2json": "./bin/jsonlines2json.js",
+    "crlf2json": "./bin/jsonlines2json.js"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugeneware/jsonlines2json"
+  },
+  "keywords": [
+    "json",
+    "json-lines",
+    "ndjson",
+    "jsoncrlf",
+    "crlf",
+    "convert"
+  ],
+  "author": "Eugene Ware <eugene@noblesamurai.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/eugeneware/jsonlines2json/issues"
+  },
+  "dependencies": {
+    "JSONStream": "^1.3.2",
+    "stream-combiner": "^0.2.2"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.6.2",
+    "tape": "^4.4.0"
+  }
+}
